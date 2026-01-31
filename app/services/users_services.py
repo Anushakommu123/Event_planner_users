@@ -15,8 +15,6 @@ from app.schemas.users_schemas import (
     UserSignupRequest,
     UserLoginRequest
 )
-
-
 class UserService:
     """
     Service class for user authentication operations
@@ -61,7 +59,7 @@ class UserService:
                 "success": False,
                 "message": "Email already registered"
             }
-        
+ 
         # Check if phone number already exists
         existing_phone = await db[self.collection_name].find_one(
             {"phone_number": user_data.phone_number}
@@ -106,7 +104,7 @@ class UserService:
         """
         db = get_db()
         
-        email_or_phone = login_data.email_or_phone
+        # email_or_phone = login_data.email_or_phone
         password = login_data.password
         
         # Determine if input is email or phone
