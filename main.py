@@ -6,7 +6,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.config import PROJECT_NAME, PROJECT_VERSION, API_V1_PREFIX, DEBUG
 from app.database import connect_db, close_db
-from app.routers import users, vendors, admin
+from app.routers import users, admin, user_events, vendor_users, vendor_services
 
 
 # Lifespan context manager for startup and shutdown events
@@ -50,8 +50,10 @@ app.add_middleware(
 
 # Include routers
 app.include_router(users.router, prefix=API_V1_PREFIX)
-app.include_router(vendors.router, prefix=API_V1_PREFIX)
+app.include_router(vendor_users.router, prefix=API_V1_PREFIX)
 app.include_router(admin.router, prefix=API_V1_PREFIX)
+app.include_router(user_events.router, prefix=API_V1_PREFIX)
+app.include_router(vendor_services.router, prefix=API_V1_PREFIX)
 
 
 # Health check endpoint
