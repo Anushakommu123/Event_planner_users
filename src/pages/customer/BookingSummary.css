@@ -1,0 +1,462 @@
+.booking-page {
+    min-height: 100vh;
+    background: var(--background-light);
+}
+
+.booking-content {
+    padding: 3rem 0;
+    min-height: calc(100vh - 70px);
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.booking-layout {
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* Payment Section */
+.payment-section {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.section-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+}
+
+.card-input {
+    position: relative;
+}
+
+.card-input svg {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-tertiary);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.payment-badges {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: var(--background-light);
+    border-radius: var(--radius-md);
+}
+
+.payment-badges span {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.badge-icons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.badge-icons img {
+    height: 24px;
+    width: auto;
+}
+
+.discount-section,
+.cancellation-policy,
+.booking-notes {
+    margin: 2rem 0;
+}
+
+.discount-section h3,
+.cancellation-policy h3,
+.booking-notes h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.discount-input {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.discount-input input {
+    flex: 1;
+}
+
+.apply-btn {
+    padding: 0.875rem 1.5rem;
+    background: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    color: var(--primary-cyan);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.apply-btn:hover {
+    background: var(--primary-cyan-light);
+    border-color: var(--primary-cyan);
+}
+
+.cancellation-policy p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.confirm-btn,
+.back-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+/* Summary Section */
+.summary-section {
+    position: sticky;
+    top: 90px;
+}
+
+.venue-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+}
+
+.venue-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.venue-info {
+    padding: 1.5rem;
+}
+
+.venue-info h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.venue-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.rating-star {
+    color: #FFC107;
+    font-size: 1.1rem;
+}
+
+.venue-rating span {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.reviews {
+    color: var(--text-tertiary);
+    font-weight: 400;
+}
+
+.venue-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.venue-address svg {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+}
+
+.event-details {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    color: var(--text-secondary);
+}
+
+.detail-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.detail-item svg {
+    color: var(--primary-cyan);
+    flex-shrink: 0;
+}
+
+.services-breakdown {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1.5rem;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    gap: 1rem;
+}
+
+.service-item:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.service-name {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    flex: 1;
+}
+
+.service-price {
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+.price-breakdown {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1rem;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+}
+
+.price-item.discount {
+    color: var(--error);
+}
+
+.total-price {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.total-price span:first-child {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.total-price span:last-child {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+}
+
+.payment-options {
+    background: var(--background-light);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+}
+
+.payment-option {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.option-label {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.option-value {
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Confirmation */
+.confirmation-container {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.confirmation-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 4rem 3rem;
+    box-shadow: var(--shadow-xl);
+    text-align: center;
+    max-width: 600px;
+}
+
+.success-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: var(--primary-cyan);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.confirmation-card h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.confirmation-card p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+}
+
+.confirmation-details {
+    color: var(--text-tertiary);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.confirmation-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.confirmation-actions .btn {
+    padding: 1rem 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .booking-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-section {
+        position: static;
+    }
+}
+
+@media (max-width: 640px) {
+    .booking-content {
+        padding: 1.5rem 0;
+    }
+
+    .payment-section {
+        padding: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .confirmation-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .confirmation-card h1 {
+        font-size: 2rem;
+    }
+
+    .confirmation-actions {
+        flex-direction: column;
+    }
+
+    .confirmation-actions .btn {
+        width: 100%;
+    }
+}
