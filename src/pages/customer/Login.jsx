@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'; // Added useEffect
 import { useNavigate, Link, useLocation } from 'react-router-dom'; // Added useLocation
+import logo from '../../assets/logo.jpg';
 import './Login.css';
 
 const CustomerLogin = () => {
@@ -103,14 +104,12 @@ const CustomerLogin = () => {
                     <div className="brand-content">
                         <div className="brand-logo">
                             <div className="logo-icon-large">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <rect x="5" y="5" width="30" height="30" rx="6" fill="white" />
-                                </svg>
+                                <img src={logo} alt="Klyra Planners" className="brand-logo-img" />
                             </div>
-                            <h1 className="brand-name">EventConnect</h1>
+                            <h1 className="brand-name">Klyra Planners</h1>
                         </div>
 
-                        <h2 className="brand-tagline">Seamless Event Planning Starts Here</h2>
+                        <h2 className="brand-tagline">One Platform for Every Event</h2>
                         <p className="brand-description">
                             Connect with top vendors, manage bookings, and create unforgettable experiences with ease.
                         </p>
@@ -317,7 +316,7 @@ const CustomerLogin = () => {
                             </p>
 
                             <p className="terms-text">
-                                By {isLogin ? 'logging in' : 'creating an account'}, you agree to EventConnect's{' '}
+                                By {isLogin ? 'logging in' : 'creating an account'}, you agree to Klyra Planners's{' '}
                                 <a href="/terms">Terms of Service</a> and{' '}
                                 <a href="/privacy">Privacy Policy</a>.
                             </p>

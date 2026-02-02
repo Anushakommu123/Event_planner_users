@@ -98,7 +98,7 @@ const Home = () => {
 
             {/* Footer */}
             <footer className="footer">
-                <p>© 2026 EventConnect. All rights reserved.</p>
+                <p>© 2026 Klyra Planners. All rights reserved.</p>
             </footer>
         </div>
     );

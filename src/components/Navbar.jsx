@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Bell, User, LogOut } from 'lucide-react';
+import logo from '../assets/logo.jpg';
 import './Navbar.css';
 
 const Navbar = ({ role = 'customer', onLogout }) => {
@@ -45,11 +46,9 @@ const Navbar = ({ role = 'customer', onLogout }) => {
             <div className="navbar-container">
                 <Link to={role === 'customer' ? '/home' : `/${role}/dashboard`} className="navbar-logo">
                     <div className="logo-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <rect x="3" y="3" width="18" height="18" rx="4" fill="white" />
-                        </svg>
+                        <img src={logo} alt="Klyra Planners" className="nav-logo-img" />
                     </div>
-                    <span className="logo-text">EventConnect</span>
+                    <span className="logo-text">Klyra Planners</span>
                 </Link>
 
                 <div className="navbar-links">
