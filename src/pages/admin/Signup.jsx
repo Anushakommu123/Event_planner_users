@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import logo from '../../assets/logo.jpg';
 import '../customer/Login.css';
 
 const AdminSignup = () => {
@@ -61,11 +62,9 @@ const AdminSignup = () => {
                     <div className="brand-content">
                         <div className="brand-logo">
                             <div className="logo-icon-large">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <rect x="5" y="5" width="30" height="30" rx="6" fill="white" />
-                                </svg>
+                                <img src={logo} alt="Klyra Planners" className="brand-logo-img" />
                             </div>
-                            <h1 className="brand-name">EventConnect</h1>
+                            <h1 className="brand-name">Klyra Planners</h1>
                         </div>
 
                         <h2 className="brand-tagline">Administrative Control Center</h2>
