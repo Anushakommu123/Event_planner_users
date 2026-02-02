@@ -1,16 +1,55 @@
-# React + Vite
+# Klyra Planners - Event Planning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a complete Event Planning platform consisting of a React-based frontend and a Python-based backend.
 
-Currently, two official plugins are available:
+## 🚀 Frontend (React + Vite)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The frontend is built with React and Vite, providing a modern and responsive user interface for Customers, Vendors, and Admins.
 
-## React Compiler
+### Features
+- Modern UI with Klyra Planners branding
+- Dedicated dashboards for Customers, Vendors, and Admins
+- Seamless event creation and service browsing
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Setup
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Backend (Python - FastAPI)
+
+The backend provides API endpoints for Users, Vendors, and Admin modules.
+
+### Features
+- **FastAPI Framework**: Modern async web framework
+- **MongoDB Integration**: Using Motor for async database operations
+- **Three Main Modules**: Users, Vendors, and Admin.
+
+### Setup
+1. Create a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the application:
+```bash
+python main.py
+```
+
+### API Endpoints
+- **Docs**: http://localhost:8000/docs
+- **Health Check**: http://localhost:8000/health
+
+---
+
+## License
+MIT License
